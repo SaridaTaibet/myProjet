@@ -6,3 +6,11 @@
 .title{
     color: brown;
 }
+.underTitle{
+    color: darkviolet;
+    text-decoration: underline;
+    border: thin solid red;
+    width:  50%;
+    height: 50px;
+    box-shadow: 3px 3px 3px black;
+}
