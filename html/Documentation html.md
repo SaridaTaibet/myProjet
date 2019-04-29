@@ -89,6 +89,7 @@ Pour rajouter une image on utilise la balise <img>
       
 Ne jamais oublier alt= (pour les mal-voyant) 
 
+
 </head>
 <body>
     
