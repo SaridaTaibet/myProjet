@@ -8,7 +8,7 @@ Les variables définies avec `const` se comportent comme des variables, sauf qu'
 
 ## Exemple
 
-    ```
+    
     <script>
 
     try {
@@ -20,7 +20,7 @@ Les variables définies avec `const` se comportent comme des variables, sauf qu'
     }
 
     </script>
-    ```
+   
 
 # Block Scope (Portée du Block)
 
@@ -30,8 +30,7 @@ Le x déclaré dans le bloc, dans cet exemple, n'est pas le même que le x décl
 ## Exemple
 
 
-      ```
-        <script>
+           <script>
 
             var x = 10;
 
@@ -44,15 +43,14 @@ Le x déclaré dans le bloc, dans cet exemple, n'est pas le même que le x décl
         document.getElementById("demo").innerHTML = x;
 
         </script>
-      ```
+
 
 ## Attribué au moment de la déclaration
 
 Les variables `const` JavaSript doivent se voir attribuer une valeur lorsqu'elles sont déclarées :
 
 ## Exemple
-
-      ```
+ 
         Incorrect
 
           const PI;
@@ -63,7 +61,7 @@ Les variables `const` JavaSript doivent se voir attribuer une valeur lorsqu'elle
 
           const PI = 3.1254879;
 
-        ```
+       
 ## Pas de constantes réelles
 
 Le mot-clé `const` est un peu trompeur.
@@ -85,7 +83,7 @@ primitive :
 
 ## Exemple
 
-       ```
+        
         <script>
 
             try {
@@ -101,7 +99,7 @@ primitive :
            }
         </script>
 
-         ```
+        
 
 ## Référence types
 
@@ -134,7 +132,7 @@ numéro 20). Un type primitif peut être stocké dans la quantité fixe de mémo
 
 ## Copie une primitive
 
-      ```
+      
           var a = 11 // assigner '11' à 'a'
 
           var b = a  // copier la valeur de 'a' sur 'b'
@@ -142,13 +140,11 @@ numéro 20). Un type primitif peut être stocké dans la quantité fixe de mémo
           b = 20    // assigner '20' à 'b'
 
           console.log(a)   // => 11
-
-      ```
+ 
 L'original n'a pas été modifié, nous ne pouvons que changer la copie.
 
 ## Copie une référence
-
-      ```
+ 
         var a = {c:11}  
 
         var b = a 
@@ -157,7 +153,7 @@ L'original n'a pas été modifié, nous ne pouvons que changer la copie.
         
         console.log(a) //=> {c: 20}    //résultat attendu 20
         
-      ```   
+       
       
 Assigner la référence d'un nouvel objet à  `'a'`  
 
@@ -177,23 +173,21 @@ Vous pouvez modifier les propriétés d'un objet constant :
 
 ## Exemple
 
-      ```
+      
         <script>
 
           const car = {type:"Fiat", model:"500",
 
           color:"white"};
         </script>
-
-      ```
+ 
 
 # ATTENTION
 
 Vous ne pouvez PAS réaffecter un objet constant : 
 
 ## Exemple
-
-    ```
+ 
       <script>
 
       try {
@@ -209,7 +203,7 @@ Vous ne pouvez PAS réaffecter un objet constant :
 
         </script>
 
-    ```
+    
 
 ## Object.values (Valeur de l'Objet)
 
@@ -219,7 +213,7 @@ La méthode `Object.values()` renvoie un tableau contenant les valeurs des propr
 
 ## Exemple
 
-      ```
+       
           const object1 = {
         a: "somestring",
         b: 11,
@@ -230,7 +224,7 @@ La méthode `Object.values()` renvoie un tableau contenant les valeurs des propr
   
         //résultats escomptés : Array ["somestring", 11, false(faux)]
   
-       ```
+       
 ## Object.values
 
 `Object.values()` renvoie un tableau dont les éléments sont les valeurs des propriétés
@@ -239,7 +233,7 @@ que celui obtenu lorsqu'on parcourt les propriétés manuellement.
   
 ## Exemple
   
-      ```
+       
   
        var obj = {toto: "truc",  machin: 42};
   
@@ -251,23 +245,22 @@ que celui obtenu lorsqu'on parcourt les propriétés manuellement.
   
         console.log (Object.values (obj)) ;   // ['a', 'b', 'c']
   
-      ```
+      
   
 Un objet semblable à un tableau dont les clés sont ordonnées aléatoirement lorsque
 des clés numériques sont utilisées, les valeurs sont renvoyées selon l'ordre  numérique
 des clés.
   
-      ```
+       
   
           var un_obj = {100: 'a', 2: 'b', 7: 'c'};
   
           console.log (object.values (un_obj)); // résultat attendu  ['b', 'c', 'a']
   
-        ```
+         
   
 getToto est une propriété qui n'est pas énumérable
-  
-        ```
+   
   
           var mon_obj = Object.create ({}, {getToto; {value: function() {return this.toto;} } } );
   
@@ -275,7 +268,7 @@ getToto est une propriété qui n'est pas énumérable
   
           console.log (Object.values(mon_obj));   // résultat attendu ['truc']
   
-      ```
+      
   
 ## Object.keys
   
@@ -283,8 +276,7 @@ getToto est une propriété qui n'est pas énumérable
 sont pas héritées via la chaîne de prototypes) et qui sont énumérables. L'ordre de ce tableau est 
 le même que celui obtenu par une boucle `for....in` (à la différence qu'une boucle for-in liste
 également les propriétés héritées).
-  
-     ```
+   
        const object1 = {
          a: 'somestring',
          b: 42,
@@ -292,7 +284,7 @@ le même que celui obtenu par une boucle `for....in` (à la différence qu'une b
        };
     
            console.log(object.keys (object1));
-        ```    
+           
     
 Résultat attendu :  Array (tableau) `["a", "b", "c"]`
        
@@ -303,7 +295,7 @@ obtenu lorsqu'on boucle manuellement sur les propriétés de l'objet.
 
 ## Exemple
 
-    ```
+    
     var arr = ["a", "b", "c"];
     
     console.log(Object.keys(arr)); 
@@ -312,28 +304,25 @@ obtenu lorsqu'on boucle manuellement sur les propriétés de l'objet.
 Affichera `['0', '1', '2']`
 
 Un objet semblable à un tableau
-
-    ```
+ 
     var obj = {0: "a", 1: "b", 2: "c"};
      console.log (Object.keys(obj));
-     
-     ```
+    
      
 Affichera `['0', '1', '2']`
 
 un objet semblalbe à un tableau avec un ordre de clé aléatoire
-
-    ```
+ 
     var an_obj = {100: "a", 2: "b", 7: "c"};
     
     console.log(Object.keys(an_obj));
-    ```
+    
     
 Affichera `['2', '7', '100']`
 
 getToto est une propriété non énumérable
 
-    ```
+    
         varmonObjet = object.create({}, {
                                        getToto : {
                                                     value:function() {
@@ -344,13 +333,74 @@ getToto est une propriété non énumérable
          monObjet.toto = 1;
          
          console.log (Object.keys(monObjet));
-       ```
+        
        
 Affichera `[Toto]` 
 
 ### Si on souhaite lister toutes les propriétés, y compris celles qui ne sont pas énumérables, on pourra utiliser 
 
 `object.getOwnPropertyNames()`
+
+# ParseInt
+
+## Définition et Utilisation
+
+La fonction `parseInt()` convertit le premier argument en une chaîne, l'analyse et renvoie un entier ou NaN. Si la valeur renvoyée n'est pas NaN, ce sera l'entier représentant le nombre contenu dans la chaîne dans la base donnée. Une base 10 est utilisée pour la base décimale, 8 pour la base octale, 16 pour la base hexadécimale. Pour les bases supérieures à 10, les lettres de l'alphabet seront utilisées pour représenter les chiffres supérieurs à 9. Par exemple, pour la base hexadécimale, on utilisera les lettres A à F.
+
+Si, lors de l'analyse de la chaîne, `parseInt()` rencontre un caractère qui n'est pas un chiffre dans la base donnée, ce caractère, ainsi que les suivants seront ignorés. `parseInt()` tronque les nombres fournies en valeurs entières (attention donc lorsque les chaînes utilisent une notation scientifique : "4e2" donnera la valeur 4 en base 10 et pas 400). Les espaces en début et en fin de chaîne sont autorisés.
+
+Si la base fournie vaut `undefined` ou `0` (ou si elle n'est pas utilisée comme paramètre), le moteur JavaScript procèdera comme suit :
+
+- Si l'argument `string` commence avec "0x" ou "0X", la base considérée sera la base 16 (hexadécimale) et le reste de la chaîne sera analysé et converti.
+Si l'argument `string` commence avec "0", la base considérée sera la base 8 (octale) ou la base 10 (décimale). La base exacte qui sera choisie dépendra de l'implémentation. ECMAScript 5 définit que la base 10 doit être utilisée. Cependant, cela n'est pas supporté par tous les navigateurs. C'est pour cette raison qu'il faut
+
+### toujours spécifier une base lorsqu'on utilise `parseInt()`.
+
+- Si l'argument `string` commence avec une autre valeur, la base considérée sera la base 10.
+
+- Si le premier caractère de la chaîne de caractères ne peut pas être converti, `parseInt()` renverra NaN.
+
+Pour des raisons arithmétiques, la valeur `NaN` n'est un nombre pour aucune base. La fonction `isNaN()` peut être utilisée pour déterminer si le résultat obtenu par `parseInt()` vaut`NaN`. Si `NaN` est utilisé dans une opération arithmétique, le résultat de cette opération sera aussi `NaN`
+
+## (on dit que NaN est une valeur « toxique »).
+
+Pour convertir un nombre en une chaîne de caractères dans une base donnée, on utilisera `monEntier.toString(base)`.
+
+## Exemples
+
+Les Exemples suivants  renvoient tous `15`:
+
+   
+        parseInt("0xF", 16);
+                   
+        parseInt("F", 16);
+        
+        parseInt("17", 8);
+        
+        parseInt(15.99, 10);
+        
+        parseInt("15,123", 10);
+        
+        parseInt("15*3", 10);
+        
+        parseInt("15px", 10);
+        
+Les Exemples suivants renvoient `NaN`
+
+        parseInt("coucou", 8); // Ce sont des lettres et pas des chiffres
+        
+        parseInt("546", 2);    // Ces chiffres ne sont pas valides pour une représentation binaire
+        
+        
+        
+        
+
+
+
+
+
+
+
 
 
     
