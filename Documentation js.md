@@ -205,9 +205,9 @@ Vous ne pouvez PAS réaffecter un objet constant :
   
          color:"red"};
   
-  }
+            }
 
-    </script>
+        </script>
 
     ```
 
