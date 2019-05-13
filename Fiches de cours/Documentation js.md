@@ -389,11 +389,91 @@ Les Exemples suivants renvoient `NaN`
 
         parseInt("coucou", 8); // Ce sont des lettres et pas des chiffres
         
-        parseInt("546", 2);    // Ces chiffres ne sont pas valides pour une représentation binaire
+        parseInt("546", 2);    // Ces chiffres ne sont pas valides pour une représentation binaire.
+        
+# Map()
+
+La méthode `map()` crée un nouveau tableau avec les réultats de l'appel d'une fonction fournie sur chaque élément du tableau appelant.
+
+lorsqu'on utilise `map`, la fonction `callback` fournie en argument est exécutée une fois pour chacun des éléments du tableau, dans l'ordre du tableau. Chaque résultat de l'opération sur un élément sera un élément du nouveau tableau. La fonction `callback` est appelée uniquement pour les indices du tableau pour lesquels il y a des valeurs affectées (y compris si cette valeur est `undefined`). Si les valeurs ont été supprimées ou qu'elles n'ont jamais été initialisées, la fonction ne sera pas appelée.
+
+`callback` est appelée avec trois arguments : la valeur de l'élément du tableau, l'index de cet élément et l'objet `Array` qui est parcouru.
+
+# ATTENTION !
+`map()` construit un nouveau tableau. Si on utilise cette méthode sans utiliser le résultat, mieux vaudra utiliser `forEach`
+ou `for...of`.  Pour mieux décider si `map()` est adéquat, regardez si vous utilisez la valeur de retour et/ou si vous renvoyez une valeur avec la fonction `callback` : si ce n'est pas le cas, il ne faut pas utiliser `map()`.
+
+`map` ne modifie pas le tableau sur lequel elle est appelée (bien que la fonction `callback`, si elle est appelée, puisse modifier le tableau.
+
+La liste des éléments à traiter lors de l'opération `map` est définie avant le premier appel à `callback`. Les éléments qui sont ajoutés au tableau après que l'appel à `map` ait été initié ne seront pas traités par la fonction `callback`. Si des éléments ont été modifiés, la valeur utilisée par la fonction `callback` sera celle au moment où `map` est utilisée. Les éléments qui sont supprimés ne sont pas traités. De la même façon, si on applique `map` sur un tableau dont certains éléments sont indéfinis, le résultat possèdera également les mêmes éléments indéfinis.
+
+## Exemples
+
+### Crée un tableau de nombres avec une fonction à argument
+
+Ici, on illustre le fonctionnement de `map` avec une fonction à argument. cet argument sera automatiquement remplacé par chaque élément du tableau au fur et à mesure que `map` parcourt le tableau :
+
+        var nombres = [1, 4, 9];
+        var doubles = nombres.map(function(num) {
+            return num * 2;
+            });
+            
+ Doubles vaut désormais `[2, 8, 18]`
+ Nombres vaut toujours  `[1, 4, 9]
+ 
+### Utiliser `map` pour changer le format d'objets dans un tableau
+
+Dans le code qui suit, on utilise un tableau d'objets pour créer un autre tableau contenant de nouveaux objets dans un autre format :
+
+        var tableauOrig = [{clé:1, valeur:10}, {clé:2, valeur:20}, {clé:3, valeur:30}]
+        var tableauFormaté = tableauOrig.map(obj => {
+                var rObj = {};
+                rObj[obj.clé] = obj.valeur;
+                return rObj;
+                });
+                
+TableauFormaté vaut maintenant `[{1:10}, {2:20}, {3:30}]`,
+
+TableauOrig vaut toujours
+
+`[{clé:1, valeur:10}`
+
+  `{clé:2, valeur:20,`
+  
+  `{clé:3, valeur:30}`
+ `]`
+  
+### Utiliser `map` avec `querySelectorAll`  
+
+Dans cet exemple, on illustre comment utiliser la méthode `map` de façon générique, sur un tableau d'objets collectés grâce à `querySelectorAll` :
+
+        var elems = document.querySelectorAll('select option:cheched');
+        var values = Array.prototype.map.call(elems, function (obj) {
+        return obj.value;
+        });
+        
+        
+
+
+        
+
+
+
+
+
+
+
+        
+# OBJECT
+
+Le constructeur `Object` crée un wrapper d'objet pour la valeur donnée. Si la valeur est `null` ou  `undefined`, il créera et retournera un objet vide, sinon,
         
         
         
         
+        
+        
+
 
 
 
