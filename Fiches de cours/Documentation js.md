@@ -1,6 +1,6 @@
 # JavaScript
 
-JavaScript est un langage de script léger, orienté par un objet, principalement connu comme le langage
+JavaScript est un langage de script, orienté par un objet, principalement connu comme le langage
 de script des pages web.
 
 Les variables définies avec `const` se comportent comme des variables, sauf qu'elles ne peuvent pas
@@ -11,11 +11,11 @@ Les variables définies avec `const` se comportent comme des variables, sauf qu'
     
     <script>
 
-    try {
+         try {
 
-        const PI = 3.141559;
+                const PI = 3.141559;
   
-        PI = 3.14;
+                     PI = 3.14;
   
     }
 
@@ -32,15 +32,15 @@ Le x déclaré dans le bloc, dans cet exemple, n'est pas le même que le x décl
 
            <script>
 
-            var x = 10;
+                     var x = 10;
 
         {
 
-             const x = 2;
+                    const x = 2;
   
           }
 
-        document.getElementById("demo").innerHTML = x;
+                    document.getElementById("demo").innerHTML = x;
 
         </script>
 
