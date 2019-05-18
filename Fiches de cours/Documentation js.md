@@ -1,7 +1,6 @@
 # JavaScript
 
-JavaScript est un langage de script, orienté par un objet, principalement connu comme le langage
-de script des pages web.
+JavaScript est un langage de programmation créer en 1995 qui nous permet de créer des pages à l'aide de script.
 
 Les variables définies avec `const` se comportent comme des variables, sauf qu'elles ne peuvent pas
 être réassignées :
