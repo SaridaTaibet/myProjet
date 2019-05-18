@@ -1,10 +1,13 @@
 # JavaScript
 
-JavaScript est un langage de script, orienté par un objet, principalement connu comme le langage
-de script des pages web.
+JavaScript est un langage de programmation créé en 1995, il nous permet de crée des pages à l'aide de script qui est une suite d'instructions qui doit être interpréter par un programme.
+Il existe 2 sort de programmation
 
-Les variables définies avec `const` se comportent comme des variables, sauf qu'elles ne peuvent pas
-être réassignées :
+## client-side s'exécute du côté du client
+
+## server-side s'exécute du côté du server
+
+Les variables définies avec `const`ne peuvent pas être réassignées.
 
 ## Exemple
 
@@ -64,19 +67,22 @@ Les variables `const` JavaSript doivent se voir attribuer une valeur lorsqu'elle
        
 ## Pas de constantes réelles
 
-Le mot-clé `const` est un peu trompeur.
+Le mot `const` est rompeur.
 
-Il ne définit `PAS` une valeur constante. Il définit une référence constante à une valeur.
+Il ne définit `PAS` une valeur constante, il définit une référence constante à une valeur.
 
-Pour cette raison, nous ne pouvons pas changer les valeurs primitives constantes, mais nous
+ C'est pour cela, que nous ne pouvons pas changer les valeurs primitives constantes, mais nous
 pouvons changer les propriétés des objets constants.
 
 ## Primitive Values (Valeur Primitive)
 
-La valeur en mémoire d'un type primitif est sa valeur réelle (par exemple, booléen vrai, 
-numéro 20). Un type primitif peur être stocké dans la quantitié fixe de mémoire disponible.
+La valeur en mémoire d'un type primitif est sa valeur réelle, et peut être stocké dans la mémoire disponible (par exemple, booléen : vrai, numéro : 20).
 
-- null, undefined, Boolean, Number, String
+- null = Nul,
+- undefined = Non défini,
+- Boolean = Booléen,
+- Number = Nombre,
+- String = 
 
 Si nous assignons une valeur primitive à une constante, nous ne pouvons pas changer la valeur
 primitive :
