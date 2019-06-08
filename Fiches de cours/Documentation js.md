@@ -1,13 +1,8 @@
 # JavaScript
 
-JavaScript est un langage de programmation créé en 1995, il nous permet de crée des pages à l'aide de script qui est une suite d'instructions qui doit être interpréter par un programme.
-Il existe 2 sort de programmation
+JavaScript est un langage de programmation qui nous permet de crée des pages à l'aide de script qui est une suite d'instructions qui doit être interpréter par un programme.
 
-## client-side s'exécute du côté du client
-
-## server-side s'exécute du côté du server
-
-Les variables définies avec `const`ne peuvent pas être réassignées.
+on défini les variables avec `const`mais on ne peut réassignées.
 
 ## Exemple
 
@@ -46,23 +41,6 @@ Le x déclaré dans le bloc, dans cet exemple, n'est pas le même que le x décl
                     document.getElementById("demo").innerHTML = x;
 
         </script>
-
-
-## Attribué au moment de la déclaration
-
-Les variables `const` JavaSript doivent se voir attribuer une valeur lorsqu'elles sont déclarées :
-
-## Exemple
- 
-        Incorrect
-
-          const PI;
-
-         PI = 3.1546565874
-
-        Correct
-
-          const PI = 3.1254879;
 
        
 ## Pas de constantes réelles
