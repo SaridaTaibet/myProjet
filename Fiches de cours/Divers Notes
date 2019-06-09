@@ -18,7 +18,7 @@ rivert = revenir en arrière (annuler)
 
 get = donne moi
 
-commit = commenter les changements du code avant de le pusher
+commit = commenter les changements du code avant de le pusher pour avoir plus d'information sur le code
 
 Tous ses mots sont des verbes d'action du protocole GITHUB
 
