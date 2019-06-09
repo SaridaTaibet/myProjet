@@ -1,8 +1,6 @@
 # JavaScript
 
-JavaScript est un langage de programmation qui nous permet de crée des pages à l'aide de script qui est une suite d'instructions qui doit être interpréter par un programme.
-
-on défini les variables avec `const`mais on ne peut réassignées.
+JavaScript est un langage de programmation qui nous permet de crée des pages à l'aide de script, qui est une suite d'instructions qui doit être interpréter par un programme.
 
 ## Exemple
 
@@ -11,7 +9,6 @@ on défini les variables avec `const`mais on ne peut réassignées.
 
          try {
 
-                const PI = 3.141559;
   
                      PI = 3.14;
   
