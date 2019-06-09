@@ -1,8 +1,8 @@
-*  HTTP
+HTTP
 
-** HTTP est un `protocole` le plus utiliser à nos jours.
+HTTP est un `protocole` le plus utiliser à nos jours.
 
-* GIT
+GIT
 
 GIT c'est un protocole qui permet de mettre à jour, d'échanger et de partager des fichiers de code (fichiers de texte).
 
@@ -18,4 +18,8 @@ rivert = revenir en arrière (annuler)
 
 get = donne moi
 
+commit = commenter les changements du code avant de le pusher
+
 Tous ses mots sont des verbes d'action du protocole GITHUB
+
+
