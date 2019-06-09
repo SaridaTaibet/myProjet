@@ -1,12 +1,12 @@
-HTTP
+# HTTP
 
 HTTP est un `protocole` le plus utiliser à nos jours.
 
-GIT
+## GIT
 
 GIT c'est un protocole qui permet de mettre à jour, d'échanger et de partager des fichiers de code (fichiers de texte).
 
-GIT théorie :
+## GIT théorie :
 
 pusher = envoyer dans le (cloud) repositorie dans github
 
