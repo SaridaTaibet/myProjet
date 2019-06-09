@@ -1,8 +1,24 @@
-* HTTP 
+*  HTTP 
 
-** HTTP Est un protocole le plus utiliser à nos jours
+**  HTTP Est un protocole le plus utiliser à nos jours
 
 
-* GIT
+*  GIT
 
-** GIT c'est un protocole qui permet de mettre à jour, d'échanger et de partager des fichiers de code  
+**  GIT c'est un protocole qui permet de mettre à jour, d'échanger et de partager des fichiers de code (fichiers de texte).
+
+WORD ET EXCEL SONT QUE DES NORMES
+
+GIT théorie :
+
+pusher = envoyer dans le cloud (repositorie) dans github
+
+pull = ramener vers soi 
+
+re-pusher en modifiant le document qui est dans le repisotorie
+
+rivert = revenir en arrière (annuler)
+
+get = donne moi
+
+sont des verbes d'action du protocole GITHUB
