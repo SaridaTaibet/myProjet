@@ -1,6 +1,6 @@
 # JavaScript
 
-JavaScript est un langage de programmation qui nous permet de crée des pages à l'aide de script, qui est une suite d'instructions qui doit être interpréter par un programme.
+JavaScript est un langage de programmation qui nous permet de crée des pages à l'aide de script, c'est une suite d'instructions qui doit être interpréter par un programme.
 
 ## Exemple
 
@@ -8,10 +8,9 @@ JavaScript est un langage de programmation qui nous permet de crée des pages à
     <script>
 
          try {
-
   
                      PI = 3.14;
-  
+ 
     }
 
     </script>
@@ -19,15 +18,15 @@ JavaScript est un langage de programmation qui nous permet de crée des pages à
 
 # Block Scope (Portée du Block)
 
-Déclarer une variable avec `const` est similaire à `let` quand il s'agit de  `Block Scope`.
-Le x déclaré dans le bloc, dans cet exemple, n'est pas le même que le x déclaré en dehors du bloc :
+La variable  `const` est similaire à `let`.
+
 
 ## Exemple
 
 
            <script>
 
-                     var x = 10;
+                     let x = 10;
 
         {
 
@@ -42,7 +41,7 @@ Le x déclaré dans le bloc, dans cet exemple, n'est pas le même que le x décl
        
 ## Pas de constantes réelles
 
-Le mot `const` est rompeur.
+Le mot `const` est trompeur.
 
 Il ne définit `PAS` une valeur constante, il définit une référence constante à une valeur.
 
@@ -51,7 +50,7 @@ pouvons changer les propriétés des objets constants.
 
 ## Primitive Values (Valeur Primitive)
 
-La valeur en mémoire d'un type primitif est sa valeur réelle, et peut être stocké dans la mémoire disponible (par exemple, booléen : vrai, numéro : 20).
+La valeur en mémoire d'un type primitif est sa valeur réelle, (par exemple, booléen : vrai ou faux, numéro : 20).
 
 - null = Nul,
 - undefined = Non défini,
