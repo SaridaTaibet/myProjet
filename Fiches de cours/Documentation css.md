@@ -2,13 +2,11 @@
 
 ## Syntaxe CSS
 
-Un ensemble de règles CSS se compose d'un sélecteur et d'un bloc de déclaration exemple :
+ Le CSS se compose d'un sélecteur et d'un bloc de déclaration exemple :
 
-h1 {color:red; font-size:15px;}
+`h1 {color:red; font-size:15px;}`
 
-Le bloc entre paranthèse est la délcaration, on peut mettre plusieurs décalrations en les séparant 
-par un (;) et chaque déclaration inclut un nom de propriété CSS et une valeur sont séparés par deux
-points.
+On peut mettre plusieurs décalrations en les séparant par un (;) et chaque déclaration inclut un nom de propriété CSS et une valeur sont séparés par deux points.
 
 **h1** est le selecteur
 **color et font-size** sont les propriétés
@@ -49,7 +47,7 @@ l'identifiant de l'élément.
 La règle de style ci-dessous sera appliquée à l'élément HTML avec id="para1" :
   
   
-      #para1{
+      para1{
            text-align: center;
            color: red;
       }
