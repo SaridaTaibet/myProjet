@@ -1,22 +1,16 @@
 # JavaScript
 
-JavaScript est un langage de script léger, orienté par un objet, principalement connu comme le langage
-de script des pages web.
-
-Les variables définies avec `const` se comportent comme des variables, sauf qu'elles ne peuvent pas
-être réassignées :
+JavaScript est un langage de programmation qui nous permet de crée des pages à l'aide de script, c'est une suite d'instructions qui doit être interpréter par un programme.
 
 ## Exemple
 
     
     <script>
 
-    try {
-
-        const PI = 3.141559;
+         try {
   
-        PI = 3.14;
-  
+                     PI = 3.14;
+ 
     }
 
     </script>
@@ -24,59 +18,45 @@ Les variables définies avec `const` se comportent comme des variables, sauf qu'
 
 # Block Scope (Portée du Block)
 
-Déclarer une variable avec `const` est similaire à `let` quand il s'agit de  `Block Scope`.
-Le x déclaré dans le bloc, dans cet exemple, n'est pas le même que le x déclaré en dehors du bloc :
+La variable  `const` est similaire à `let`.
+
 
 ## Exemple
 
 
            <script>
 
-            var x = 10;
+                     let x = 10;
 
         {
 
-             const x = 2;
+                    const x = 2;
   
           }
 
-        document.getElementById("demo").innerHTML = x;
+                    document.getElementById("demo").innerHTML = x;
 
         </script>
-
-
-## Attribué au moment de la déclaration
-
-Les variables `const` JavaSript doivent se voir attribuer une valeur lorsqu'elles sont déclarées :
-
-## Exemple
- 
-        Incorrect
-
-          const PI;
-
-         PI = 3.1546565874
-
-        Correct
-
-          const PI = 3.1254879;
 
        
 ## Pas de constantes réelles
 
-Le mot-clé `const` est un peu trompeur.
+Le mot `const` est trompeur.
 
-Il ne définit `PAS` une valeur constante. Il définit une référence constante à une valeur.
+Il ne définit `PAS` une valeur constante, il définit une référence constante à une valeur.
 
-Pour cette raison, nous ne pouvons pas changer les valeurs primitives constantes, mais nous
+ C'est pour cela, que nous ne pouvons pas changer les valeurs primitives constantes, mais nous
 pouvons changer les propriétés des objets constants.
 
 ## Primitive Values (Valeur Primitive)
 
-La valeur en mémoire d'un type primitif est sa valeur réelle (par exemple, booléen vrai, 
-numéro 20). Un type primitif peur être stocké dans la quantitié fixe de mémoire disponible.
+La valeur en mémoire d'un type primitif est sa valeur réelle, (par exemple, booléen : vrai ou faux, numéro : 20).
 
-- null, undefined, Boolean, Number, String
+- null = Nul,
+- undefined = Non défini,
+- Boolean = Booléen,
+- Number = Nombre,
+- String = 
 
 Si nous assignons une valeur primitive à une constante, nous ne pouvons pas changer la valeur
 primitive :
