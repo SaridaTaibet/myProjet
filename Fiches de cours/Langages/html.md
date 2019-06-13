@@ -1,4 +1,4 @@
-# cours de html
+# Cours de html
 
 ## comment on fait des titres en html
 
@@ -12,14 +12,14 @@ elle sert à valider les pages, elle est toujours situer avant la balise <html>
 
 ```html
 <!DOCTYPE html>
+    <html lang="fr">
     Un attribut est toujours à l'intérieur d'une balis sans oublier=
     example : lang=
  
-    <html lang="fr">
 <html>
 ```
 
-Lélément html `<head></head>`fournit des informations générales sur le document,
+L'élément html `<head></head>`fournit des informations générales sur le document,
 il contient principalement des données  destinées au traitement automatisé et pas nécessairement
 lisibles par des humains.
 
@@ -87,7 +87,7 @@ Pour rajouter une image on utilise la balise <img>
       <img src="photo.png" alt="Une photo :)" />
     
       
-Ne jamais oublier alt= (pour les mal-voyant) 
+Ne jamais oublier alt = (pour les mal-voyant) 
 
 
 </head>
