@@ -23,7 +23,19 @@ http et https : To make Node.js act as an HTTP server (Pour que Node.js agisse c
 
 net : To create serves and clients (Pour créer des serveurs et des clients).
 
+MODULE DU SYSTEME DE FICHIERS NODE.JS
 
+Le module http est intégré dans Node.js pour transférer des données via le protocole http
+Pour pouvoir inclure le module http utiliser la méthode require():
+Exemple :
+
+var http = require ('http');
+
+NODE.JS EN TANT QUE SERVEUR WEB 
+http peux écouté les ports du serveur et renvoyer une réponse au client en créant un serveur http via le module http.
+Pour cela on utilise la méthode créateServer() pour créer un serveur http :
+
+Exemple
 
 
 
