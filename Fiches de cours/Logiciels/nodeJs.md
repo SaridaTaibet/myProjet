@@ -2,10 +2,6 @@ Historique :
 • Node.js est créé par Ryan Dahl en 2009
 • Sponsorisé par Joyent
 • Développé sur la base de la VM V8 de Google
-• Version actuelle : Node v7.7.3 (14 Mars 2017)
-
-
-
 
 # NODEJS
 
@@ -23,14 +19,14 @@ Nous pouvons utilisez sans installation ces modules qui sont intégrés dans nod
 
 Exemple :
 
-`assert` : Provides a set of assertion tests (fournit un ensemble de tests d'affirmation)
+`assert` : fournit un ensemble de tests d'affirmation
 Ce module est utiliser pour tester les expressions de valeur 0 ou la valeur false, un échec d'assertion est provoqué et le programme s'arrête.
 
-`child_process` : To run a child process (Pour exécuter un processus enfant)
+`child_process` : Pour exécuter un processus enfant
 
-`http et https` : To make Node.js act as an HTTP server (Pour que Node.js agisse comme un serveur HTTP);
+`http et https` : Pour que Node.js agisse comme un serveur HTTP
 
-`net` : To create serves and clients (Pour créer des serveurs et des clients).
+`net` : Pour créer des serveurs et des clients.
 
 # MODULE DU SYSTEME DE FICHIERS NODE.JS
 
