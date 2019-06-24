@@ -2,7 +2,14 @@ CRUD = Creat = Créer
        Read = Lire
        Update = Mettre à jour
        Delete = Supprimé
-
+Get = chercher, recevoir
+Post = Ajouter
+Put = changer tous
+Patch = Changer 1 ou 2
+Send = envoyer des donner
+Interface = API     
+Req = requête
+Res = résultat
 !=== veut dire (inverse de)
 
 === veut dire (comparaison)
@@ -24,6 +31,7 @@ current = courant
 light = claire
 indexOf = indice de
 split = se scinder, séparé
+
 
 
 
