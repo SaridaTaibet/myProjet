@@ -1,7 +1,11 @@
-Historique :
-• Node.js est créé par Ryan Dahl en 2009
-• Sponsorisé par Joyent
-• Développé sur la base de la VM V8 de Google
+
+# Historique :
+
+• Node.js est créé par Ryan Dahl en 2009.
+
+• Sponsorisé par Joyent.
+
+• Développé sur la base de la VM V8 de Google.
 
 # NODEJS
 
@@ -20,7 +24,7 @@ Nous pouvons utilisez sans installation ces modules qui sont intégrés dans nod
 Exemple :
 
 `assert` : fournit un ensemble de tests d'affirmation
-Ce module est utiliser pour tester les expressions de valeur 0 ou la valeur false, un échec d'assertion est provoqué et le programme s'arrête.
+Ce module est utiliser pour tester les expressions de valeur 0 ou la valeur faux (false), un échec d'assertion est provoqué et le programme s'arrête.
 
 `child_process` : Pour exécuter un processus enfant
 
@@ -30,7 +34,7 @@ Ce module est utiliser pour tester les expressions de valeur 0 ou la valeur fals
 
 # MODULE DU SYSTEME DE FICHIERS NODE.JS
 
-Le module http est intégré dans `Node.js` pour transférer des données via le protocole `http`
+Le module http est intégré dans `Node.js` pour transférer des données via le protocole `http`.
 Pour pouvoir inclure le module `http` utiliser la méthode `require()`:
 
 Exemple :
@@ -167,6 +171,17 @@ app.post('/create', (req, res) => {
 
 patch = modifier 1 ou 2 objets
 
+Exemple :
+``` javascript
+
+app.patch('/update1/:id', (req, res) => {
+    const [hostel] = hostels.filter(value => value.id === parseInt(req.params.id));
+    console.log(req.params.id);
+    const data = req.body;
+    let newHostel = Object.assign(hostel, data);
+    res.send(newHostel).status(200);
+});
+```
 
 delete = supprimer
 
