@@ -1,8 +1,25 @@
-# Cours de html
-
-## comment on fait des titres en html
+# HTML
 
 ### Structure de base html
+
+## En-tête (Header)
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+
+    <script src="array.js" type="module"></script>
+    <script src="for.js" type="module"></script>
+    <script src="object.js" type="module"></script>
+    <script src="class.js"></script>
+    <script src="bundle.js"></script>
+
+</head>
+```
+
 
 Le fichier html est composé de balises
     
