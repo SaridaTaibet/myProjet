@@ -2,8 +2,6 @@
 
 ### Structure de base html
 
-## En-tête (Header)
-
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -25,44 +23,38 @@ Le fichier html est composé de balises
     
 1ère balise `<!DOCTYPE html>` principal but est d'indiquer aux
 navigateur comment interpréter le  document ou la page web
-elle sert à valider les pages, elle est toujours situer avant la balise <html>
+elle sert à valider les pages, elle est toujours situer avant la balise `<html>`
 
 ```html
 <!DOCTYPE html>
     <html lang="fr">
-    Un attribut est toujours à l'intérieur d'une balis sans oublier=
-    example : lang=
+    //Un attribut est toujours à l'intérieur d'une balise 
+    
  
-<html>
+</html>
 ```
 
 L'élément html `<head></head>`fournit des informations générales sur le document,
 il contient principalement des données  destinées au traitement automatisé et pas nécessairement
 lisibles par des humains.
 
-<head>
 Les balises meta servent à placer des métadonnées dans une page html
-`<meta charset="UTFt8">` est un codage de caratères informatiques conçu
-pour coder l'ensemble des caractères du  "répertoire universel de
-caractères codés"
+`<meta charset="UTFt8">` c'est un codage conçu pour coder l'ensemble des caractères du répertoire. 
    
- <meta charset="UTF-8">
- 
-L'élément html `<link>` définit la relation entre le document courant et une 
-ressource externe. Cet élément peut être utilisé pour définir un lien vers une 
-feuilles de styles ou un cadre de navigation.
- 
- <link rel="stylesheet" href="styles.css">
+L'élément html `<link>` définit la relation entre le document et une 
+ressource externe.
  
 Pour intégrer ou faire référence à un script exécutable on utilise
 la balise `<script></script>`
-```
+Exemple
+
+``` htlm
   <script src=index.js></script>
  ```
-Il existe plusieurs attributs dont **src** qui définit l'URLd'un script 
-et *type* qui définit le language de script utilisé par le script contenu
-dans l'élément ou référencé via l'attribut src.
-Modifier le texte dans Les balises **title** ou **body**
+L'attributs  `src` définit l'URL d'un script et `type` définit le language de script utilisé par le script contenu
+dans l'élément ou la référence dans l'attribut `src`.
+
+Modifier le texte dans Les balises `title` ou `body`
 
 ```
 <title> mon dossier </title>
@@ -71,8 +63,7 @@ Modifier le texte dans Les balises **title** ou **body**
 
 # En-têtes
     
-Les balises (h1, h2, h3, h4, h5, h6) sont un moyen
-de stucturer le contenu d'un texte
+Les balises (h1, h2, h3, h4) sont un moyen de stucturer l'en-tête d'un texte.
 
  ```
     <h1> titre principal </h1>
@@ -87,7 +78,7 @@ Pour écrire un paragraphe on utilise la balise <p></p>
     <p> mon paragraphe 3 </p>
  ```   
     
-L'élément html `<div>` est un conteneur générique qui permet d'organiser le contenu sans 
+L'élément html `<div>` signifie diviseur de docuement, il permet d'organiser le contenu sans 
 représenter rien de particulier. Il peut être utilisé afin de grouper d'autres éléments pour 
 leur appliquer un style (en utilisant les attributs *class* ou *id* ou *lang*) 
 
