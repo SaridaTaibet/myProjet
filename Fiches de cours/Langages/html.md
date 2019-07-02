@@ -1,7 +1,10 @@
 # HTML
+HTML (Hyper Text Markup Langage) est un langage qui définit la structure d'une page web.
 
 ### Structure de base html
-La structure de base html commence toujours par` <!DOCTYPE html>`
+Les structures de base html :
+
+Exemple :
 
 ```
 <!DOCTYPE html>
@@ -49,21 +52,22 @@ Les balises meta servent à placer des métadonnées dans une page html
  ```
  
 Pour intégrer ou faire référence à un script exécutable on utilise la balise `<script></script>`.
+L'attribut  `src` définit l'URL d'un script dans l'élément ou la référence dans l'attribut `src`.
 
 Exemple
 
 ``` htlm
   <script src=index.js></script>
  ```
-L'attribut  `src` définit l'URL d'un script et `type` définit le language de script utilisé par le script contenu
-dans l'élément ou la référence dans l'attribut `src`.
 
 
 
-Modifier le texte dans Les balises `title` ou `body`
+Nous utilisons la balise `title`  pour écrire le titre de notre page.
+
+Exemple :
 
 ```
-<title> mon dossier </title>
+<title> mon dossier personnel </title>
 ```
 
 
