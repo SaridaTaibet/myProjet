@@ -1,5 +1,5 @@
 # HTML
-HTML (Hyper Text Markup Langage) est un langage qui définit la structure d'une page web.
+Le langage qui définit la structure d'une page web c'est HTML `(Hyper Text Markup Langage)` 
 
 ### Structure de base html
 Les structures de base html :
@@ -37,7 +37,7 @@ elle sert à valider les pages, elle est toujours situer avant la balise `<html>
 ```
 Un attribut est toujours à l'intérieur d'une balise 
 
-L'élément html `<head></head>`fournit des informations générales sur le document,
+L'élément html `<head></head>` fournit des informations générales sur le document,
 il contient principalement des données  destinées au traitement automatisé et pas nécessairement
 lisibles.
 
